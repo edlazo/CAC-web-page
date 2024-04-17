@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
 /*  Header styles */
 header {
     background-color: #FCFCFC;
@@ -48,7 +55,7 @@ header img {
 
 /*  Main styles */
 .carousel {
-    max-width: 500px; /* Adjust the maximum width as desired */
+    max-width: 100%; /* Adjust the maximum width as desired */
     margin: 0 auto;
 }
 
@@ -57,12 +64,60 @@ header img {
     height: auto;
 }
 
-/* separator h2 in center*/
-h2 {
-    text-align: center;
-    background-color: #AC6D0F;
+/* products */
+.products {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
 }
 
+.products div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.products img {
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+}
+
+details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+details summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+details summary:hover {
+    cursor: pointer;
+}
+
+/* separator h2 in center*/
+h2 {
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #AC6D0F;
+
+}
 
 /* category with image in circels*/
 .category {
