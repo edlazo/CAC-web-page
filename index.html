@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/styles/style.css">
     <link rel="icon" href="/static/img/icon.ico">
     <script src="https://kit.fontawesome.com/401e7f8f46.js" crossorigin="anonymous"></script>
     <title>Petshop</title>
@@ -26,7 +26,7 @@
     </header>
     <section>
         <!-- carousel -->
-        <div>
+        <div class="carousel">
             <img src="static/img/carousel.png" alt="">
         </div>
     </section>
@@ -71,13 +71,15 @@
     <!-- separator -->
     <h2>Tu primera mascota</h2>
     <!-- anchor with images -->
-    <section>
-        <a href="">
-            <img src="/static/img/categoria_gato.jpeg" alt="">
-        </a>
-        <a href="">
-            <img src="/static/img/categoria_perros.jpg" alt="">
-        </a>
+    <section class="category">
+        <div>
+            <a href="a">
+                <img src="/static/img/categoria_gato.jpeg" alt="">
+            </a>
+            <a href="a">
+                <img src="/static/img/categoria_perros.jpg" alt="">
+            </a>
+        </div>
     </section>
     <!-- footer -->
     <footer>
@@ -89,12 +91,13 @@
                 <li><a href="/templates/sign_in.html">Sign in</a></li>
                 <li><a href="/templates/sign_up.html">Sign up</a></li>
             </ul>
+        </nav>
         <!-- payment methods -->
-        <div>
-            <img src="/static/img/payment_methods.png" alt="">
+        <div class="payment">
+            <img src="/static/img/pay_methop.png" alt="">
         </div>
         <!-- social networks -->
-        <div>
+        <div class="social">
             <a href="">
                 <i class="fa-brands fa-facebook"></i>
             </a>
