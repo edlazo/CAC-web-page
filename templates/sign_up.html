@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/img/icon.ico">
+    <title>Join Petshop</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+            <!-- logo -->
+            <a href="index.html" class="logo">
+                <img src="/static/img/icon.ico" alt="Petshop">
+            </a>
+            <!-- Hyper links -->
+            <div>
+                <span>Already have an account?</span>
+            <ul>
+                <li><a href="/templates/sign_in.html">Sign in →</a></li>
+            </ul>
+            </div>         
+    </header>
+    <!-- Form -->
+    <div class="box-form">
+        <!-- Form for register-->
+        <form action="/sign_up" method="POST">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Sign up</button>
+</body>
+</html>
