@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/img/icon.ico">
+    <title>Sign in to Petshop</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+            <!-- logo -->
+            <a href="index.html" class="logo">
+                <img src="/static/img/icon.ico" alt="Petshop">
+            </a>
+    </header>
+    <div class="title">
+        <h2>Sign in to Petshop</h2>
+    </div>
+    <div class="box-form">
+        <!-- Form -->
+        <form action="/sign_in" method="POST">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Sign in</button>
+    </div>
+</body>
+</html>
