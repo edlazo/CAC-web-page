@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Nombre de la rama principal
+main_branch="main"
+
+# Verificar si la rama actual es `main`
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+# Obtener el nombre del remoto
+remote=$(git config branch.$current_branch.remote)
+
+# Hacer un fetch para obtener las actualizaciones más recientes del remoto
+git fetch $remote
+
+# Verificar si la rama actual está detrás de la rama `main`
+ahead_behind=$(git rev-list --left-right --count $current_branch...$remote/$main_branch)
+
+# Si la rama actual está detrás de `main`, impedir el push
+if [[ $ahead_behind =~ [[:space:]]*[1-9][0-9]*[[:space:]]+0 ]]; then
+  echo "ERROR: La rama está detrás de '$main_branch'. Por favor, haga un git pull de '$main_branch' antes de hacer push."
+  exit 1  # Detener el push
+fi
+
+exit 0  # Permitir el push si no está detrás de `main`
