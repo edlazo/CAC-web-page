@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Contar la cantidad de commits en la rama actual
+commit_count=$(git rev-list --count HEAD)
+
+# Si ya hay al menos un commit, impedir nuevos commits
+if [ "$commit_count" -ge 1 ]; then
+  echo "ERROR: Esta rama ya tiene un commit. No se permiten más de un commit en la rama."
+  exit 1  # Detener el commit
+fi
+
+exit 0  # Permitir el commit si no hay ningún commit en la rama

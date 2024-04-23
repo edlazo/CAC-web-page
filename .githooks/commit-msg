@@ -1,0 +1,15 @@
+#!/bin/bash
+# Definir los prefijos permitidos
+prefixes="feat|fix|peft|docs|style|refactor|test|chore"
+
+# Leer el mensaje de commit
+commit_message=$(cat "$1")
+
+# Verificar si el mensaje sigue el formato "<prefix>: <description>"
+if [[ ! $commit_message =~ ^($prefixes):\ .+$ ]]; then
+  echo "ERROR: El mensaje de commit debe seguir el formato '<prefix>: <description>'."
+  echo "Los prefijos permitidos son: feat, fix, docs, style, refactor, test, chore."
+  exit 1  # Detener el commit
+fi
+
+exit 0  # Permitir el commit si pasa la verificación

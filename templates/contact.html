@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-</head>
 
 <head>
     <meta charset="UTF-8">
@@ -18,13 +17,14 @@
             <!-- logo -->
             <a href="../index.html" class="logo">
                 <img src="/static/img/icon.ico" alt="Petshop">
-                <!-- Hyper links -->
-                <ul>
-                    <li><a href="/templates/product.html">Productos</a></li>
-                    <li><a href="/templates/contact.html">Contacto</a></li>
-                    <li><a href="/templates/sign_in.html">Iniciar Sesión</a></li>
-                    <li><a href="/templates/sign_up.html">Registrarse</a></li>
-                </ul>
+            </a>
+            <!-- Hyper links -->
+            <ul>
+                <li><a href="/templates/product.html">Productos</a></li>
+                <li><a href="/templates/contact.html">Contacto</a></li>
+                <li><a href="/templates/sign_in.html">Iniciar Sesión</a></li>
+                <li><a href="/templates/sign_up.html">Registrarse</a></li>
+            </ul>
         </nav>
     </header>
     <!-- Formulario y Ubicación  -->
@@ -53,7 +53,7 @@
                         <input type="email" name="email" id="email" required>
                     </div>
 
-                    <!-- Cantidad Mascotas -->
+                    <!--Select Cantidad Mascotas -->
                     <div class="form-select">
                         <label for="">Cuantas mascotas tenes?</label>
                         <select name="pet-number" id="pet-number" class="form-select">
@@ -86,10 +86,10 @@
                 </textarea>
 
                     </div>
-
-                    <!-- Botón de Envío -->
-                    <input type="image" id="image-button" alt="Enviar" src="/static/img/send-button.PNG" />
-
+                    <div class="button-send">
+                        <!-- Botón de Envío -->
+                        <input type="image" id="image-button" alt="Enviar" src="/static/img/send-button.PNG" />
+                    </div>
                 </form>
 
             </div>
@@ -105,7 +105,7 @@
                 <div class="map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13124.360208827942!2d-58.62641748412652!3d-34.67767662257845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc706b402cc3f%3A0x73aa9f4bb3bcd036!2sPetshop!5e0!3m2!1ses-419!2sar!4v1713389291005!5m2!1ses-419!2sar"
-                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>

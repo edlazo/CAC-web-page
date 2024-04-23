@@ -75,14 +75,16 @@ header img {
 
 .box_form_ubication {
     display: flex;
-    background-color: lightblue;
+    background-color: hsl(36, 87%, 51%);
     justify-content: center;
     align-items: start;
+    margin: 50px;
+    border-radius: 50px;
 }
 
 .ubication_box {
     width: 50%;
-    background-color: aquamarine;
+
     align-items: center;
     justify-content: center;
     vertical-align: middle;
@@ -93,7 +95,6 @@ header img {
 
 .form_box {
     width: 50%;
-    background-color: lightpink;
     align-items: center;
     justify-content: center;
     vertical-align: middle;
@@ -117,18 +118,69 @@ header img {
     display: block;
 }
 
-.form-control input,
-select {
-    width: 70%;
+.form-control input
+{
     margin: 3px 0px 3px 0px;
     border-radius: 5px;
-    /* border: 1px solid salmon; */
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+input , select, textarea{
+    background-color: #E0C172;
+}
+
+.form-select 
+{
+    border: 1px ;
+    margin: 3px 0px 3px 0px;
+    border-radius: 5px;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.radio-cat-dog , textarea{
+    margin: 0px;
+    border-radius: 5px;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    border: 1px ;
+}
+
+.form-texarea 
+{
+    display: block;
+    border: 1px ;
+}
+
+.button-send
+{
+    margin: 30px, 10px, 10px, 50px;
+    justify-content: center;
+    display: flex;
+    border-radius: 30px;
+    height: 50px;
 }
 
 /* Ubication styles */
 
 .map {
     border-radius: 50px;
+}
+.ubication_title{
+    margin-bottom: 20px;
 }
 
 /* Footer base styles */
