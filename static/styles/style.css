@@ -75,15 +75,17 @@ header img {
     }
 }
 
-/* Carousel Styles */
+/* ACA ESTA CAROUSEL */
 .carousel {
     max-width: 100%;
     margin: 0 auto;
-    overflow: hidden; /* For carousel */
+    overflow: hidden; /* para el carousel */
 }
 
 .carousel img {
-    width: 100%; /* Ensuring images are responsive */
+    width: 100%; 
+    display: block;
+    transition: transform 0.5s ease;
 }
 
 h2 {
