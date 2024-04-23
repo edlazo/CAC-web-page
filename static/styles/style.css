@@ -84,8 +84,8 @@ header img {
 
 .carousel ul { 
     display: flex;
-    animation: cambio 20s infinite
-    alternate horizontal;
+    overflow: hidden;
+    animation: cambio 10s infinite alternate linear;
 }
 
 .carousel li{
@@ -93,18 +93,16 @@ header img {
     list-style: none;
 }
 
-@keyframes cambio{
-    0% {margin-left: 0;} 
-    20% {margin-left: 0;} 
-   
-    25% {margin-left: -100%;} 
-    45% {margin-left: -100%;} 
-  
-    50% {margin-left: -200%;} 
-    70% {margin-left: -200%;} 
+.carousel img{
+    width: 100%;
+    height: auto;
+}
 
-    75% {margin-left: -300%}
-    100% { margin-left: -300%;}
+@keyframes cambio{
+    0% { left: 0; } /* Posición inicial, no se desplaza */
+    33.33% { left: -100%; } /* Desplaza hacia la izquierda para mostrar la segunda imagen */
+    66.66% { left: -200%; } /* Desplaza hacia la izquierda para mostrar la tercera imagen */
+    100% { left: 0; } /* Vuelve a la posición inicial para mostrar la primera imagen nuevamente */
 }
 
 h2 {
