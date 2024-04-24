@@ -75,34 +75,47 @@ header img {
     }
 }
 
-/* ACA ESTA CAROUSEL */
-.carousel {
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden; 
-}
-
-.carousel ul { 
-    display: flex;
-    overflow: hidden;
-    animation: cambio 10s infinite alternate linear;
-}
-
-.carousel li{
-    width: 100%;
-    list-style: none;
-}
-
-.carousel img{
+/* carrousel */
+.slide-box {
     width: 100%;
     height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
 }
 
-@keyframes cambio{
-    0% { left: 0; } /* Posición inicial, no se desplaza */
-    33.33% { left: -100%; } /* Desplaza hacia la izquierda para mostrar la segunda imagen */
-    66.66% { left: -200%; } /* Desplaza hacia la izquierda para mostrar la tercera imagen */
-    100% { left: 0; } /* Vuelve a la posición inicial para mostrar la primera imagen nuevamente */
+.slide-box ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slide-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    33% { margin-left: 0; }
+
+    36% { margin-left: -100%; }
+    66% { margin-left: -100%; }
+
+    69% { margin-left: -200%; }
+    100% { margin-left: -200%; }
+}
+
+@media (max-width: 991px) {
+    .slide-box {
+        width: 100%;
+    }
+    
 }
 
 h2 {
