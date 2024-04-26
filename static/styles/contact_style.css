@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html {
+  width: 100%;
+}
+
 /* Header Styles */
 header {
   background-color: #ffffff;
@@ -54,55 +58,37 @@ header img {
   height: auto;
 }
 
-/* Usando media queries para ajustar la imagen según el tamaño de la pantalla */
-@media (min-width: 600px) {
-  header img {
-    width: 45%;
-    /* Aumenta el tamaño de la imagen a medida que el espacio disponible crece */
-    min-width: 80px;
-    /* Tamaño mínimo mayor para pantallas más grandes */
-  }
-}
 
-@media (min-width: 1024px) {
-  header img {
-    width: 60%;
-    /* Aún más grande para pantallas grandes */
-    min-width: 100px;
-    /* Tamaño mínimo para pantallas grandes */
-  }
-}
 
 .box_form_ubication {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
 .ubication_box {
-    width: 50%;
-    background-color: hsl(36, 87%, 51%);
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    margin-left: 50px;
-    vertical-align: top;
-    margin: 20px 25px;
-    padding: 50px;
-    border-radius: 50px;
-    min-height: 700px;
+  width: 50%;
+  background-color: hsl(36, 87%, 51%);
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-left: 50px;
+  vertical-align: top;
+  margin: 20px 25px;
+  padding: 50px;
+  border-radius: 50px;
+  min-height: 700px;
 }
 
 .form_box {
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    margin: 20px 25px 20px 50px;
-    background-color: hsl(36, 87%, 51%);
-    padding: 50px;
-    border-radius: 50px;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 20px 25px 20px 50px;
+  background-color: hsl(36, 87%, 51%);
+  padding: 50px;
+  border-radius: 50px;
 }
 
 .contact_form {
@@ -121,46 +107,47 @@ header img {
   display: block;
 }
 
-.form-control input
-{
-    margin: 3px 0px 3px 0px;
-    border-radius: 5px;
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px ;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
+.form-control input {
+  margin: 3px 0px 3px 0px;
+  border-radius: 5px;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
 
 }
-input , select, textarea{
-    background-color: #E0C172;
+
+input,
+select,
+textarea {
+  background-color: #E0C172;
 }
 
-.form-select 
-{
-    border: 1px ;
-    margin: 3px 0px 3px 0px;
-    border-radius: 5px;
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
+.form-select {
+  border: 1px;
+  margin: 3px 0px 3px 0px;
+  border-radius: 5px;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-textarea{
-    border-radius: 5px;
-    width: 90%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px ;
-    margin: 10px 10px 10px 3px;
+textarea {
+  border-radius: 5px;
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px;
+  margin: 10px 10px 10px 3px;
 }
 
-.radio-cat-dog{
+.radio-cat-dog {
   margin-left: 50px;
   padding: 10px;
   margin-bottom: 10px;
@@ -168,17 +155,17 @@ textarea{
   display: flex;
 }
 
-.label-dog-cat{
+.label-dog-cat {
   display: inline-block;
   vertical-align: middle;
-  margin-left:10px ;
+  margin-left: 10px;
 }
 
 input[type="radio"] {
   display: none;
 }
 
-input[type="radio"] + *::before {
+input[type="radio"]+*::before {
   content: "";
   display: inline-block;
   vertical-align: bottom;
@@ -191,38 +178,29 @@ input[type="radio"] + *::before {
   border-color: black;
 }
 
-input[type="radio"]:checked + * {
+input[type="radio"]:checked+* {
   color: black;
 }
 
-input[type="radio"]:checked + *::before {
+input[type="radio"]:checked+*::before {
   background: radial-gradient(black 0%, black 40%, transparent 50%, transparent);
   border-color: black;
 }
-.button-send
-{
-    margin: 30px, 10px, 10px, 50px;
-    justify-content: center;
-    display: flex;
-    border-radius: 30px;
-    height: 50px;
+
+.button-send {
+  margin: 30px, 10px, 10px, 50px;
+  justify-content: center;
+  display: flex;
+  border-radius: 30px;
+  height: 50px;
 }
-.button-send input{
+
+.button-send input {
   border-radius: 10px;
 }
 
 /* Ubication styles */
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .form-wrapper {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-}
 
 .ubication_box_map {
   max-width: 1100px;
@@ -241,7 +219,8 @@ input[type="radio"]:checked + *::before {
 
 .map {
   width: 100%;
-  height: 615px; /* Increased height for the map container */
+  height: 615px;
+  /* Increased height for the map container */
   overflow: hidden;
   position: relative;
   border-radius: 50px;
@@ -260,26 +239,7 @@ input[type="radio"]:checked + *::before {
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .ubication_box_map {
-    max-width: 100%;
-    margin: 20px auto;
-  }
 
-  .map {
-    height: 500px; /* Reduced height for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .ubication_box_map {
-    margin: 10px auto;
-  }
-
-  .map {
-    height: 400px; /* Reduced height for even smaller screens */
-  }
-}
 
 /* Footer base styles */
 footer {
@@ -364,4 +324,91 @@ nav ul li a:hover {
   color: #ddd;
   /* Change color on hover */
 }
+
 /* Path: static/styles/style.css */
+
+/* Usando media queries para ajustar la imagen según el tamaño de la pantalla */
+
+@media (min-width: 0px) and (max-width: 599px) {
+  header img {
+    width: 60%;
+    /* Aún más grande para pantallas grandes */
+    min-width: 100px;
+    /* Tamaño mínimo para pantallas grandes */
+  }
+
+  .box_form_ubication {
+    display: block;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .form_box {
+    width: 95%;
+    margin: 50px 10px;
+  }
+
+  .ubication_box_map {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  header img {
+    width: 45%;
+    /* Aumenta el tamaño de la imagen a medida que el espacio disponible crece */
+    min-width: 80px;
+    /* Tamaño mínimo mayor para pantallas más grandes */
+  }
+
+  .box_form_ubication {
+    display: block;
+    margin: auto;
+  }
+
+  .box_form_ubication {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form_box {
+    width: 75%;
+    margin: 50px auto;
+    align-items: center;
+  }
+
+  .ubication_box_map {
+    margin: 50px auto;
+    width: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  header img {
+    width: 60%;
+    /* Aún más grande para pantallas grandes */
+    min-width: 100px;
+    /* Tamaño mínimo para pantallas grandes */
+  }
+
+  .box_form_ubication {
+    display: block inline;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form_box {
+    width: 40%;
+    margin: 50px auto;
+    align-items: center;
+    max-height: 900px;
+  }
+
+  .ubication_box_map {
+    margin: 50px auto;
+    width: 40%;
+    max-height: 900px;
+  }
+}
