@@ -74,24 +74,24 @@ header img {
 }
 
 .box_form_ubication {
-<<<<<<< HEAD
     display: flex;
-    background-color: hsl(36, 87%, 51%);
     justify-content: center;
     align-items: start;
     margin: 50px;
-    border-radius: 50px;
 }
 
 .ubication_box {
     width: 50%;
-
+    background-color: hsl(36, 87%, 51%);
     align-items: center;
     justify-content: center;
     vertical-align: middle;
     margin-left: 50px;
     vertical-align: top;
     margin: 20px 25px;
+    padding: 50px;
+    border-radius: 50px;
+    min-height: 700px;
 }
 
 .form_box {
@@ -100,33 +100,9 @@ header img {
     justify-content: center;
     vertical-align: middle;
     margin: 20px 25px 20px 50px;
-=======
-  display: flex;
-  background-color: hsl(36, 87%, 51%);
-  justify-content: center;
-  align-items: start;
-  margin: 50px;
-  border-radius: 50px;
-}
-
-.ubication_box {
-  width: 50%;
-
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-  margin-left: 50px;
-  vertical-align: top;
-  margin: 20px 25px;
-}
-
-.form_box {
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-  margin: 20px 25px 20px 50px;
->>>>>>> 2c6e9b251cbc5995814d126ee89a387d88e706e5
+    background-color: hsl(36, 87%, 51%);
+    padding: 50px;
+    border-radius: 50px;
 }
 
 .contact_form {
@@ -135,7 +111,7 @@ header img {
 
 .form-control,
 .form-select,
-.form-texarea,
+.form-textarea,
 .form-radio {
   margin: 10px 0px 10px 10px;
 }
@@ -145,7 +121,6 @@ header img {
   display: block;
 }
 
-<<<<<<< HEAD
 .form-control input
 {
     margin: 3px 0px 3px 0px;
@@ -176,23 +151,54 @@ input , select, textarea{
     font-size: 16px;
 }
 
-.radio-cat-dog , textarea{
-    margin: 0px;
+textarea{
     border-radius: 5px;
     width: 90%;
     padding: 10px;
-    margin-bottom: 10px;
     font-size: 16px;
-    display: flex;
     border: 1px ;
+    margin: 10px 10px 10px 3px;
 }
 
-.form-texarea 
-{
-    display: block;
-    border: 1px ;
+.radio-cat-dog{
+  margin-left: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
 }
 
+.label-dog-cat{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left:10px ;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: black;
+}
+
+input[type="radio"]:checked + * {
+  color: black;
+}
+
+input[type="radio"]:checked + *::before {
+  background: radial-gradient(black 0%, black 40%, transparent 50%, transparent);
+  border-color: black;
+}
 .button-send
 {
     margin: 30px, 10px, 10px, 50px;
@@ -200,84 +206,9 @@ input , select, textarea{
     display: flex;
     border-radius: 30px;
     height: 50px;
-=======
-.form-control input {
-  margin: 3px 0px 3px 0px;
-  border-radius: 5px;
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 16px;
 }
-input,
-select,
-textarea {
-  background-color: #e0c172;
-}
-
-.form-select {
-  border: 1px;
-  margin: 3px 0px 3px 0px;
-  border-radius: 5px;
-  width: 95%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-.radio-cat-dog,
-textarea {
-  margin: 0px;
-  border-radius: 5px;
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  display: flex;
-  border: 1px;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.form-wrapper {
-  flex: 1;
-  margin-right: 20px; /* Adjust the margin between form and map as you like */
-}
-
-.form-textarea {
-  margin-bottom: 20px;
-}
-
-.form-textarea label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.form-textarea textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  resize: vertical;
-}
-
-.button-send {
-  margin: 30px, 10px, 10px, 50px;
-  justify-content: center;
-  display: flex;
-  border-radius: 30px;
-  height: 50px;
-  margin-top: 20px;
->>>>>>> 2c6e9b251cbc5995814d126ee89a387d88e706e5
+.button-send input{
+  border-radius: 10px;
 }
 
 /* Ubication styles */
@@ -293,15 +224,61 @@ textarea {
   }
 }
 
-.map {
+.ubication_box_map {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: hsl(36, 87%, 51%);
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-left: 50px;
+  vertical-align: top;
+  margin: 20px 25px;
+  padding: 50px;
   border-radius: 50px;
-  flex: 1;
 }
+
+.map {
+  width: 100%;
+  height: 615px; /* Increased height for the map container */
+  overflow: hidden;
+  position: relative;
+  border-radius: 50px;
+}
+
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  top: 0;
+  left: 0;
+}
+
 .ubication_title {
   margin-bottom: 20px;
 }
-.ubication_title{
-    margin-bottom: 20px;
+
+@media (max-width: 768px) {
+  .ubication_box_map {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .map {
+    height: 500px; /* Reduced height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .ubication_box_map {
+    margin: 10px auto;
+  }
+
+  .map {
+    height: 400px; /* Reduced height for even smaller screens */
+  }
 }
 
 /* Footer base styles */

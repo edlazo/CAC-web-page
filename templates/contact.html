@@ -41,7 +41,7 @@
             <!-- Nombre -->
             <div class="form-control">
               <label for="">Nombre</label>
-              <input type="text" name="firstname" id="firstname" required />
+              <input type="text" name="firstname" id="firstname" required placeholder="Ej: Federico"/>
             </div>
 
             <!-- Teléfono -->
@@ -52,7 +52,7 @@
                 name="phone"
                 id="phone"
                 required
-                placeholder="Ejemplo: 11 1234 5678"
+                placeholder="Ej: 11 1234 5678"
               />
             </div>
 
@@ -64,7 +64,7 @@
                 name="email"
                 id="email"
                 required
-                placeholder="Por ejemplo: email@example.com"
+                placeholder="Ej: email@example.com"
               />
             </div>
 
@@ -83,14 +83,12 @@
 
             <!-- Raddio button Perro o Gato -->
             <div class="form-radio">
+              <label for="">Que prefieres?</label>
               <div class="radio-cat-dog">
-                <label for="">Que prefieres?</label>
-
                 <input type="radio" id="dog" name="cat-dog" />
-                <label for="dog">Perros</label>
-
+                <label for="dog" class="label-dog-cat">Perros</label>
                 <input type="radio" id="cat" name="cat-dog" />
-                <label for="cat">Gatos</label>
+                <label for="cat" class="label-dog-cat">Gatos</label>
               </div>
             </div>
 
@@ -117,7 +115,7 @@
           </form>
         </div>
         <!-- Ubicación -->
-        <div class="ubication_box">
+        <div class="ubication_box_map">
           <!-- Texto sobre el mapa -->
           <div class="ubication_title">
             <h3>Encontranos en:</h3>
@@ -128,7 +126,7 @@
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13124.360208827942!2d-58.62641748412652!3d-34.67767662257845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc706b402cc3f%3A0x73aa9f4bb3bcd036!2sPetshop!5e0!3m2!1ses-419!2sar!4v1713389291005!5m2!1ses-419!2sar"
               width="600"
-              height="400"
+              height="600" 
               style="border: 0"
               allowfullscreen=""
               loading="lazy"

@@ -53,22 +53,29 @@ ul li a {
 form {
   display: inline-block;
   text-align: left;
+  width: 70%;
+  align-items: center;
+  margin: 20px 25px 20px 50px;
+  background-color: hsl(36, 87%, 51%);
+  padding: 50px;
+  border-radius: 50px;
 }
 
 /* Add some basic styling for form fields */
 form input {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  border: 1px ;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
+  background-color: #E0C172;
 }
 
 form button {
-  background-color: #4caf50;
-  color: white;
+  background-color: rgba(255,201,14,255);
+  color: black;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -79,5 +86,12 @@ form button {
 }
 
 form button:hover {
-  background-color: #45a049;
+  background-color: rgba(255,201,14,255);
+}
+
+p{
+ font-style: bold;
+ font-size: 20px;
+ text-align: center;
+ margin-bottom: 20px;
 }
