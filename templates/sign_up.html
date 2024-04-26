@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles/sign_up.css">
-    <link rel="icon" href="/static/img/icon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles/sign_up.css" />
+    <link rel="icon" href="/static/img/icon.ico" />
     <title>Join Petshop</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header>
-        <!-- Hyper links -->
-        <div>
-
-        </div>
+      <!-- Hyper links -->
+      <div></div>
     </header>
     <!-- Form -->
     <div class="container">
-        <a href="../index.html">
-            <img src="/static/img/icon.ico" alt="Your Image" class="center-image">
-        </a>
-        <!-- Form for register-->
-        <form action="/submit_registration" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="phone">Phone (optional):</label><br>
-            <input type="tel" id="phone" name="phone"><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br>
-            <label for="confirm-password">Confirm Password:</label><br>
-            <input type="password" id="confirm-password" name="confirm-password"><br>
-            <span>Already have an account?</span>
-            <ul>
-                <li><a href="/templates/sign_in.html">Sign in →</a></li>
-            </ul>
-            <button>Create acount</button>
-        </form>
+      <a href="../index.html">
+        <img src="/static/img/icon.ico" alt="img" class="center-image" />
+      </a>
+      <!-- Form for register-->
+      <form action="/submit_registration" method="post">
+        <label for="name">Nombre:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Ej.: Maria Perez"
+        /><br />
+        <label for="email">Correo Electronico:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Ej.: email@example.com"
+        /><br />
+        <label for="phone">Telefono (Opcional):</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Ej.: 11 1234 5678"
+        /><br />
+        <label for="password">Contraseña:</label><br />
+        <input type="password" id="password" name="password" /><br />
+        <label for="confirm-password">Confirmar Contraseña:</label><br />
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+        /><br />
+        <span>¿Ya tienes una cuenta?</span>
+        <ul>
+          <li><a href="/templates/sign_in.html">Inicia sesion aqui. →</a></li>
+        </ul>
+        <button>Crear Cuenta</button>
+      </form>
     </div>
-</body>
-
+  </body>
 </html>

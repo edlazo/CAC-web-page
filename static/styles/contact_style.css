@@ -1,79 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 * {
-    box-sizing: border-box;
-    font-family: 'Varela Round', sans-serif;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header Styles */
 header {
-    background-color: #FCFCFC;
-    padding: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
 }
 
 header h1 {
-    font-size: 1.5rem;
-    /* Using rem for font sizes */
+  font-size: 1.5rem;
+  /* Using rem for font sizes */
 }
 
 header p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    /* Allow wrapping on smaller screens */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Allow wrapping on smaller screens */
 }
 
 header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    /* Using gap for spacing */
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  /* Using gap for spacing */
 }
 
 header nav ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 header nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 header img {
-    width: 10%;
-    min-width: 60px;
-    max-width: 200px;
-    height: auto;
+  width: 10%;
+  min-width: 60px;
+  max-width: 200px;
+  height: auto;
 }
 
 /* Usando media queries para ajustar la imagen según el tamaño de la pantalla */
 @media (min-width: 600px) {
-    header img {
-        width: 45%;
-        /* Aumenta el tamaño de la imagen a medida que el espacio disponible crece */
-        min-width: 80px;
-        /* Tamaño mínimo mayor para pantallas más grandes */
-    }
+  header img {
+    width: 45%;
+    /* Aumenta el tamaño de la imagen a medida que el espacio disponible crece */
+    min-width: 80px;
+    /* Tamaño mínimo mayor para pantallas más grandes */
+  }
 }
 
 @media (min-width: 1024px) {
-    header img {
-        width: 60%;
-        /* Aún más grande para pantallas grandes */
-        min-width: 100px;
-        /* Tamaño mínimo para pantallas grandes */
-    }
+  header img {
+    width: 60%;
+    /* Aún más grande para pantallas grandes */
+    min-width: 100px;
+    /* Tamaño mínimo para pantallas grandes */
+  }
 }
 
 .box_form_ubication {
+<<<<<<< HEAD
     display: flex;
     background-color: hsl(36, 87%, 51%);
     justify-content: center;
@@ -99,25 +100,52 @@ header img {
     justify-content: center;
     vertical-align: middle;
     margin: 20px 25px 20px 50px;
+=======
+  display: flex;
+  background-color: hsl(36, 87%, 51%);
+  justify-content: center;
+  align-items: start;
+  margin: 50px;
+  border-radius: 50px;
+}
+
+.ubication_box {
+  width: 50%;
+
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-left: 50px;
+  vertical-align: top;
+  margin: 20px 25px;
+}
+
+.form_box {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 20px 25px 20px 50px;
+>>>>>>> 2c6e9b251cbc5995814d126ee89a387d88e706e5
 }
 
 .contact_form {
-    display: block;
-
+  display: block;
 }
 
 .form-control,
 .form-select,
 .form-texarea,
 .form-radio {
-    margin: 10px 0px 10px 10px;
+  margin: 10px 0px 10px 10px;
 }
 
 .contact_form label {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
+<<<<<<< HEAD
 .form-control input
 {
     margin: 3px 0px 3px 0px;
@@ -172,12 +200,105 @@ input , select, textarea{
     display: flex;
     border-radius: 30px;
     height: 50px;
+=======
+.form-control input {
+  margin: 3px 0px 3px 0px;
+  border-radius: 5px;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+input,
+select,
+textarea {
+  background-color: #e0c172;
+}
+
+.form-select {
+  border: 1px;
+  margin: 3px 0px 3px 0px;
+  border-radius: 5px;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.radio-cat-dog,
+textarea {
+  margin: 0px;
+  border-radius: 5px;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  border: 1px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-wrapper {
+  flex: 1;
+  margin-right: 20px; /* Adjust the margin between form and map as you like */
+}
+
+.form-textarea {
+  margin-bottom: 20px;
+}
+
+.form-textarea label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-textarea textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.button-send {
+  margin: 30px, 10px, 10px, 50px;
+  justify-content: center;
+  display: flex;
+  border-radius: 30px;
+  height: 50px;
+  margin-top: 20px;
+>>>>>>> 2c6e9b251cbc5995814d126ee89a387d88e706e5
 }
 
 /* Ubication styles */
 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .form-wrapper {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
 .map {
-    border-radius: 50px;
+  border-radius: 50px;
+  flex: 1;
+}
+.ubication_title {
+  margin-bottom: 20px;
 }
 .ubication_title{
     margin-bottom: 20px;
@@ -185,85 +306,85 @@ input , select, textarea{
 
 /* Footer base styles */
 footer {
-    background-color: hsl(36, 87%, 51%);
-    /* Dark background color */
-    color: white;
-    /* White text color */
-    padding: 20px;
-    /* Padding around the footer */
-    display: flex;
-    justify-content: space-between;
-    /* Distribute items across the width */
-    align-items: center;
-    /* Align items vertically */
+  background-color: hsl(36, 87%, 51%);
+  /* Dark background color */
+  color: white;
+  /* White text color */
+  padding: 20px;
+  /* Padding around the footer */
+  display: flex;
+  justify-content: space-between;
+  /* Distribute items across the width */
+  align-items: center;
+  /* Align items vertically */
 }
 
 /* Navigation styles */
 nav ul {
-    list-style: none;
-    /* Remove bullet points from the list */
-    padding: 0;
-    /* Remove default padding */
-    margin: 0;
-    /* Remove default margin */
-    display: flex;
-    /* Display as a horizontal row */
+  list-style: none;
+  /* Remove bullet points from the list */
+  padding: 0;
+  /* Remove default padding */
+  margin: 0;
+  /* Remove default margin */
+  display: flex;
+  /* Display as a horizontal row */
 }
 
 nav ul li {
-    margin-right: 20px;
-    /* Spacing between items */
+  margin-right: 20px;
+  /* Spacing between items */
 }
 
 nav ul li a {
-    text-decoration: none;
-    /* Remove underline from links */
-    color: white;
-    /* Keep text white */
+  text-decoration: none;
+  /* Remove underline from links */
+  color: white;
+  /* Keep text white */
 }
 
 nav ul li a:hover {
-    color: #ddd;
-    /* Change color on hover */
+  color: #ddd;
+  /* Change color on hover */
 }
 
 /* Payment methods styles */
 .payment-methods {
-    display: flex;
-    /* Display as a horizontal row */
+  display: flex;
+  /* Display as a horizontal row */
 }
 
 .payment-methods i {
-    font-size: 24px;
-    /* Icon size */
-    margin-right: 10px;
-    /* Spacing between icons */
-    color: white;
-    /* White icon color */
+  font-size: 24px;
+  /* Icon size */
+  margin-right: 10px;
+  /* Spacing between icons */
+  color: white;
+  /* White icon color */
 }
 
 /* Social media styles */
 .social-media {
-    display: flex;
-    /* Display as a horizontal row */
+  display: flex;
+  /* Display as a horizontal row */
 }
 
 .social-media a {
-    text-decoration: none;
-    /* No underline for links */
+  text-decoration: none;
+  /* No underline for links */
 }
 
 .social-media i {
-    font-size: 24px;
-    /* Icon size */
-    margin-right: 10px;
-    /* Spacing between icons */
-    color: white;
-    /* White icon color */
+  font-size: 24px;
+  /* Icon size */
+  margin-right: 10px;
+  /* Spacing between icons */
+  color: white;
+  /* White icon color */
 }
 
 .social-media i:hover {
-    color: #ddd;
-    /* Change color on hover */
+  color: #ddd;
+  /* Change color on hover */
 }
 /* Path: static/styles/style.css */
