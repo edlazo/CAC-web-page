@@ -41,7 +41,7 @@
             <!-- Nombre -->
             <div class="form-control">
               <label for="">Nombre</label>
-              <input type="text" name="firstname" id="firstname" required />
+              <input type="text" name="firstname" id="firstname" required placeholder="Ej: Federico"/>
             </div>
 
             <!-- Teléfono -->
@@ -52,7 +52,7 @@
                 name="phone"
                 id="phone"
                 required
-                placeholder="Ejemplo: 11 1234 5678"
+                placeholder="Ej: 11 1234 5678"
               />
             </div>
 
@@ -64,7 +64,7 @@
                 name="email"
                 id="email"
                 required
-                placeholder="Por ejemplo: email@example.com"
+                placeholder="Ej: email@example.com"
               />
             </div>
 
@@ -83,14 +83,12 @@
 
             <!-- Raddio button Perro o Gato -->
             <div class="form-radio">
+              <label for="">Que prefieres?</label>
               <div class="radio-cat-dog">
-                <label for="">Que prefieres?</label>
-
                 <input type="radio" id="dog" name="cat-dog" />
-                <label for="dog">Perros</label>
-
+                <label for="dog" class="label-dog-cat">Perros</label>
                 <input type="radio" id="cat" name="cat-dog" />
-                <label for="cat">Gatos</label>
+                <label for="cat" class="label-dog-cat">Gatos</label>
               </div>
             </div>
 
