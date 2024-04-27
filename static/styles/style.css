@@ -350,11 +350,21 @@ nav ul li a:hover {
   header nav ul {
     flex-wrap: wrap;
   }
-
+ 
+}
+header nav ul li a {
+  font-size: 15px;
+}
+@media (max-width: 390px) {
   header nav ul li a {
     font-size: 12px;
   }
 }
+  header nav ul li {
+    margin-right: 0px;
+  }
+  
+
 
 @media (min-width: 600px) and (max-width: 1023px) {
 

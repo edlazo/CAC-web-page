@@ -232,6 +232,15 @@ nav ul li a:hover {
 
   header nav ul li a {
     font-size: 12px;
+    font-size: 15px;
+  }
+  header nav ul li {
+    margin-right: 0px;
+  }
+  @media (max-width: 390px) {
+    header nav ul li a {
+      font-size: 12px;
+    }
   }
 }
 
