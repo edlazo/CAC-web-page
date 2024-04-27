@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
 body {
@@ -27,7 +27,7 @@ ul {
   list-style-type: none;
   display: flex;
   gap: 15px;
-  
+
   /* Spacing between links */
 }
 
@@ -88,7 +88,7 @@ form input {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px ;
+  border: 1px;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
@@ -96,7 +96,7 @@ form input {
 }
 
 form button {
-  background-color: rgba(255,201,14,255);
+  background-color: rgba(255, 201, 14, 255);
   color: black;
   padding: 10px 20px;
   border: none;
@@ -109,12 +109,12 @@ form button {
 }
 
 form button:hover {
-  background-color: rgba(255,201,14,255);
+  background-color: rgba(255, 201, 14, 255);
 }
 
-p{
- font-style: bold;
- font-size: 20px;
- text-align: center;
- margin-bottom: 20px;
+p {
+  font-style: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }

@@ -1,154 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/styles/contact_style.css" />
-    <link rel="icon" href="/static/img/icon.ico" />
-    <title>Contacto</title>
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header>
-      <nav>
-        <!-- logo -->
-        <a href="../index.html" class="logo">
-          <img src="/static/img/icon.ico" alt="Petshop" />
-        </a>
-        <!-- Hyper links -->
-        <ul>
-          <li><a href="/templates/product.html">Productos</a></li>
-          <li><a href="/templates/contact.html">Contacto</a></li>
-          <li><a href="/templates/sign_in.html">Iniciar Sesión</a></li>
-          <li><a href="/templates/sign_up.html">Registrarse</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Formulario y Ubicación  -->
-    <section>
-      <div class="box_form_ubication">
-        <!-- Formulario Contacto -->
-        <div class="form_box">
-          <form
-            action="#"
-            method="post"
-            id="form_contact"
-            novalidate
-            class="contact_form"
-          >
-            <h3>Envianos tu consulta</h3>
-            <!-- Nombre -->
-            <div class="form-control">
-              <label for="">Nombre</label>
-              <input type="text" name="firstname" id="firstname" required placeholder="Ej: Federico"/>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../static/styles/contact_style.css" />
+  <link rel="icon" href="/static/img/icon.ico" />
+  <title>Contacto</title>
+</head>
 
-            <!-- Teléfono -->
-            <div class="form-control">
-              <label for="">Teléfono</label>
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                required
-                placeholder="Ej: 11 1234 5678"
-              />
-            </div>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <!-- logo -->
+      <a href="../index.html" class="logo">
+        <img src="/static/img/icon.ico" alt="Petshop" />
+      </a>
+      <!-- Hyper links -->
+      <ul>
+        <li><a href="/templates/product.html">Productos</a></li>
+        <li><a href="/templates/contact.html">Contacto</a></li>
+        <li><a href="/templates/sign_in.html">Iniciar Sesión</a></li>
+        <li><a href="/templates/sign_up.html">Registrarse</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Formulario y Ubicación  -->
+  <section>
+    <div class="box_form_ubication">
+      <!-- Formulario Contacto -->
+      <div class="form_box">
+        <form action="#" method="post" id="form_contact" novalidate class="contact_form">
+          <h3>Envianos tu consulta</h3>
+          <!-- Nombre -->
+          <div class="form-control">
+            <label for="">Nombre</label>
+            <input type="text" name="firstname" id="firstname" required placeholder="Ej: Federico" />
+          </div>
 
-            <!-- Mail -->
-            <div class="form-control">
-              <label for="">Mail</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                required
-                placeholder="Ej: email@example.com"
-              />
-            </div>
+          <!-- Teléfono -->
+          <div class="form-control">
+            <label for="">Teléfono</label>
+            <input type="tel" name="phone" id="phone" required placeholder="Ej: 11 1234 5678" />
+          </div>
 
-            <!--Select Cantidad Mascotas -->
-            <div class="form-select">
-              <label for="">Cuantas mascotas tenes?</label>
-              <select name="pet-number" id="pet-number" class="form-select">
-                <option value="0">Ninguna</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5+">5 o más</option>
-              </select>
-            </div>
+          <!-- Mail -->
+          <div class="form-control">
+            <label for="">Mail</label>
+            <input type="email" name="email" id="email" required placeholder="Ej: email@example.com" />
+          </div>
 
-            <!-- Raddio button Perro o Gato -->
-            <div class="form-radio">
-              <label for="">Que prefieres?</label>
-              <div class="radio-cat-dog">
-                <input type="radio" id="dog" name="cat-dog" />
-                <label for="dog" class="label-dog-cat">Perros</label>
-                <input type="radio" id="cat" name="cat-dog" />
-                <label for="cat" class="label-dog-cat">Gatos</label>
-              </div>
-            </div>
+          <!--Select Cantidad Mascotas -->
+          <div class="form-select">
+            <label for="">Cuantas mascotas tenes?</label>
+            <select name="pet-number" id="pet-number" class="form-select">
+              <option value="0">Ninguna</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5+">5 o más</option>
+            </select>
+          </div>
 
-            <!-- Text Area -->
-            <div class="form-textarea">
-              <label for="textarea">En qué podemos ayudarte?</label>
-              <textarea
-                id="textarea"
-                name="textarea"
-                rows="4"
-                cols="30"
-                placeholder="Escribe tu mensaje aqui."
-              ></textarea>
+          <!-- Raddio button Perro o Gato -->
+          <div class="form-radio">
+            <label for="">Que prefieres?</label>
+            <div class="radio-cat-dog">
+              <input type="radio" id="dog" name="cat-dog" />
+              <label for="dog" class="label-dog-cat">Perros</label>
+              <input type="radio" id="cat" name="cat-dog" />
+              <label for="cat" class="label-dog-cat">Gatos</label>
             </div>
-            <div class="button-send">
-              <!-- Botón de Envío -->
-              <input
-                type="image"
-                id="image-button"
-                alt="Enviar"
-                src="/static/img/send-button.PNG"
-              />
-            </div>
-          </form>
+          </div>
+
+          <!-- Text Area -->
+          <div class="form-textarea">
+            <label for="textarea">En qué podemos ayudarte?</label>
+            <textarea id="textarea" name="textarea" rows="4" cols="30"
+              placeholder="Escribe tu mensaje aqui."></textarea>
+          </div>
+          <div class="button-send">
+            <!-- Botón de Envío -->
+            <input type="image" id="image-button" alt="Enviar" src="/static/img/send-button.PNG" />
+          </div>
+        </form>
+      </div>
+      <!-- Ubicación -->
+      <div class="ubication_box_map">
+        <!-- Texto sobre el mapa -->
+        <div class="ubication_title">
+          <h3>Encontranos en:</h3>
         </div>
-        <!-- Ubicación -->
-        <div class="ubication_box_map">
-          <!-- Texto sobre el mapa -->
-          <div class="ubication_title">
-            <h3>Encontranos en:</h3>
-          </div>
 
-          <!-- Mapa - API Google Maps -->
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13124.360208827942!2d-58.62641748412652!3d-34.67767662257845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc706b402cc3f%3A0x73aa9f4bb3bcd036!2sPetshop!5e0!3m2!1ses-419!2sar!4v1713389291005!5m2!1ses-419!2sar"
-              width="600"
-              height="600" 
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
+        <!-- Mapa - API Google Maps -->
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13124.360208827942!2d-58.62641748412652!3d-34.67767662257845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc706b402cc3f%3A0x73aa9f4bb3bcd036!2sPetshop!5e0!3m2!1ses-419!2sar!4v1713389291005!5m2!1ses-419!2sar"
+            width="600" height="600" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
-    </section>
-    <!-- Footer section -->
-    <footer>
-      <!-- Navigation section -->
-      <nav>
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/templates/sign_in.html">Iniciar Sesión</a></li>
-          <li><a href="/templates/sign_up.html">Registrarse</a></li>
-          <li><a href="/templates/contact.html">Contacto</a></li>
-        </ul>
-      </nav>
-
+    </div>
+  </section>
+  <!-- Footer section -->
+  <footer>
+    <!-- Navigation section -->
+    <div class="box-nav"></div>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/templates/sign_in.html">Iniciar Sesión</a></li>
+        <li><a href="/templates/sign_up.html">Registrarse</a></li>
+        <li><a href="/templates/contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+    </div>
+  
       <!-- Payment methods -->
       <div class="payment-methods">
         <i class="fab fa-cc-visa"></i>
@@ -156,23 +126,15 @@
         <i class="fab fa-cc-amex"></i>
         <i class="fab fa-cc-paypal"></i>
       </div>
-
       <!-- Social media icons -->
       <div class="social-media">
-        <a href="https://twitter.com" target="_blank"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a href="https://instagram.com" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="https://facebook.com" target="_blank"
-          ><i class="fab fa-facebook"></i
-        ></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
       </div>
-    </footer>
-    <script
-      src="https://kit.fontawesome.com/401e7f8f46.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    
+  </footer>
+  <script src="https://kit.fontawesome.com/401e7f8f46.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
