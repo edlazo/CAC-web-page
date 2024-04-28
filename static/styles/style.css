@@ -236,7 +236,7 @@ details summary:hover {
   view-timeline-axis: block;
   animation-timeline: --everything;
   animation-name: show;
-  animation-range: entry 25% cover 30%;
+  animation-range: entry 10% cover 30%;
   animation-fill-mode: both;
 }
 
@@ -248,7 +248,7 @@ footer {
   /* White text color */
   padding: 20px;
   /* Padding around the footer */
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   /* Distribute items across the width */
   align-items: center;
@@ -393,58 +393,35 @@ header nav ul li a {
     height: 300px;
   }
 
-  footer {
-    padding: 20px;
-    /* Padding around the footer */
-    display: block;
-    justify-content: space-between;
-    /* Distribute items across the width */
+  footer{
+    padding: 20px; /* Padding around the footer */
+    display: flex;
+    justify-content: space-between; /* Distribute items across the width */
     align-items: center;
   }
-
   /* Payment methods styles */
-  .payment-methods {
-    display: flex;
-    /* Display as a horizontal row */
-  }
-
-  .social-media {
-    display: flex;
-  }
-
-
-  .payment-methods,
-  .social-media {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-  }
-
-  .box-nav {
-    display: flex;
-    flex-wrap: wrap;
+.payment-methods {
+  display: flex; /* Display as a horizontal row */
+}
+  .social-media
+  {display: flex;
   }
 }
 
 
 @media (min-width: 1024px) {
-  footer {
-    padding: 20px;
-    /* Padding around the footer */
+  footer{
+    padding: 20px; /* Padding around the footer */
     display: flex;
-    justify-content: space-between;
-    /* Distribute items across the width */
+    justify-content: space-between; /* Distribute items across the width */
     align-items: center;
   }
-
   /* Payment methods styles */
-  .payment-methods {
-    display: flex;
-    /* Display as a horizontal row */
-  }
-
-  .social-media {
-    display: flex;
+.payment-methods {
+  display: flex; /* Display as a horizontal row */
+}
+  .social-media
+  {display: flex;
   }
 
 }
