@@ -236,7 +236,7 @@ details summary:hover {
   view-timeline-axis: block;
   animation-timeline: --everything;
   animation-name: show;
-  animation-range: entry 10% cover 30%;
+  animation-range: entry 25% cover 30%;
   animation-fill-mode: both;
 }
 
