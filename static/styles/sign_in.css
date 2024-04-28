@@ -5,6 +5,8 @@
   font-family: "Varela Round", sans-serif;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: black;
 }
 
 body {
@@ -25,6 +27,7 @@ ul {
   list-style-type: none;
   display: flex;
   gap: 15px;
+
   /* Spacing between links */
 }
 
@@ -73,31 +76,45 @@ form {
   text-align: left;
   background-color: #f7f5f5;
   padding: 20px;
+
+  width: 70%;
+  margin: 20px 25px 20px 50px;
+  background-color: hsl(36, 87%, 51%);
+  border-radius: 50px;
 }
 
 /* Add some basic styling for form fields */
 form input {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  border: 1px;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
+  background-color: #E0C172;
 }
 
 form button {
-  background-color: #4caf50;
-  color: white;
+  background-color: rgba(255, 201, 14, 255);
+  color: black;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  margin: 10px 0;
+  margin: 10px 0 10px 0;
   width: 100%;
+  align-items: center;
 }
 
 form button:hover {
-  background-color: #45a049;
+  background-color: rgba(255, 201, 14, 255);
+}
+
+p {
+  font-style: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
