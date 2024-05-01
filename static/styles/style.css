@@ -7,7 +7,17 @@
   --third-color: #b596f6;
   --third-bis-color: #395cd1;
   --bg-input-color: #ffffff;
-}
+
+@keyframes show {
+  0% {
+    scale: 25%;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    scale: 100%;
+  }
 
 * {
   box-sizing: border-box;
@@ -91,7 +101,7 @@ header img {
 .slide-box {
   width: 100%;
   height: auto;
-  margin: 50px auto 0;
+  margin: 50px 0 0 0;
   overflow: hidden;
 }
 
@@ -177,6 +187,12 @@ h2 {
   /* Responsive width */
   height: auto;
   /* Maintain aspect ratio */
+  view-timeline-name: --everything;
+  view-timeline-axis: block;
+  animation-timeline: --everything;
+  animation-name: show;
+  animation-range: entry 10% cover 45%;
+  animation-fill-mode: both;
 }
 
 /* Details */
@@ -210,13 +226,16 @@ details summary:hover {
 /* Imágenes de categoría (gatos y perros) */
 .cat-image,
 .dog-image {
-  width: 200px;
-  /* Tamaño más pequeño para dispositivos móviles */
-  height: 200px;
+  width: 350px;
+  height: 350px;
   border-radius: 100%;
-  /* Mantiene la forma circular */
   object-fit: cover;
-  /* Asegura que la imagen cubra el contenedor */
+  view-timeline-name: --everything;
+  view-timeline-axis: block;
+  animation-timeline: --everything;
+  animation-name: show;
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
 }
 
 /* Footer base styles */
@@ -302,9 +321,6 @@ nav ul li a:hover {
   color: #ddd;
   /* Change color on hover */
 }
-
-
-
 
 @media (min-width: 0px) and (max-width: 600px) {
 
