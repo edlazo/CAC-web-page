@@ -8,7 +8,6 @@
   --third-bis-color: #395cd1;
   --bg-input-color: #ffffff;
 }
-
 @keyframes show {
   0% {
     scale: 25%;
@@ -20,7 +19,6 @@
     scale: 100%;
   }
 }
-
 * {
   box-sizing: border-box;
   font-family: "Varela Round", sans-serif;
