@@ -3,7 +3,7 @@
 :root{
     --bg-color: #ffffff;
     --primary-color: #000000;
-    --secondary-color: #ed9600;
+    --secondary-color: #feb028;
     --third-color: #b596f6;
     --third-bis-color: #395cd1;
     --bg-input-color: #ffffff;
@@ -18,7 +18,7 @@
 
 /* Header Styles */
 header {
-    background-color: #FCFCFC;
+    background-color: var(--secondary-color);
     padding: 1rem; 
 }
 
@@ -80,16 +80,19 @@ header img {
     max-width: 100%;
     margin: 0 auto;
     overflow: hidden; 
+    position: relative;
 }
 
 .carousel ul { 
+    padding: 0;
+    margin: 0;
     display: flex;
     overflow: hidden;
-    animation: cambio 10s infinite alternate linear;
+    animation: cambio 20s infinite linear;
 }
 
 .carousel li{
-    width: 100%;
+    flex: 0 0 100%;
     list-style: none;
 }
 
@@ -99,17 +102,18 @@ header img {
 }
 
 @keyframes cambio{
-    0% { left: 0; } /* Posición inicial, no se desplaza */
-    33.33% { left: -100%; } /* Desplaza hacia la izquierda para mostrar la segunda imagen */
-    66.66% { left: -200%; } /* Desplaza hacia la izquierda para mostrar la tercera imagen */
-    100% { left: 0; } /* Vuelve a la posición inicial para mostrar la primera imagen nuevamente */
+    0% {transform: translateX(0);} /* Utilizamos transform para el desplazamiento horizontal */
+    25% {transform: translateX(-100%);} /* Desplaza hacia la izquierda para mostrar la segunda imagen */
+    50% {transform: translateX(-200%);} /* Desplaza hacia la izquierda para mostrar la tercera imagen */
+    75% {transform: translateX(-300%);} /* Desplaza hacia la izquierda para mostrar la cuarta imagen */
+    100% {transform: translateX(0);}
 }
 
 h2 {
     padding: 10px 0;
     margin: 10px 0;
     text-align: center;
-    background-color: hsl(36, 87%, 51%);
+    background-color: var(--secondary-color);
     color: white;
 }
 
