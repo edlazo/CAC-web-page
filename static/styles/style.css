@@ -75,38 +75,47 @@ header img {
     }
 }
 
-/* ACA ESTA CAROUSEL */
-.carousel {
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden; 
+/* carrousel */
+.slide-box {
+    width: 100%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slide-box ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slide-box li{
+    width: 100%;
+    list-style: none;
     position: relative;
 }
 
-.carousel ul { 
-    padding: 0;
-    margin: 0;
-    display: flex;
-    overflow: hidden;
-    animation: cambio 20s infinite linear;
-}
-
-.carousel li{
-    flex: 0 0 100%;
-    list-style: none;
-}
-
-.carousel img{
+.slide-box img{
     width: 100%;
-    height: auto;
 }
 
-@keyframes cambio{
-    0% {transform: translateX(0);} /* Utilizamos transform para el desplazamiento horizontal */
-    25% {transform: translateX(-100%);} /* Desplaza hacia la izquierda para mostrar la segunda imagen */
-    50% {transform: translateX(-200%);} /* Desplaza hacia la izquierda para mostrar la tercera imagen */
-    75% {transform: translateX(-300%);} /* Desplaza hacia la izquierda para mostrar la cuarta imagen */
-    100% {transform: translateX(0);}
+@keyframes slide {
+    0% { margin-left: 0; }
+    33% { margin-left: 0; }
+
+    36% { margin-left: -100%; }
+    66% { margin-left: -100%; }
+
+    69% { margin-left: -200%; }
+    100% { margin-left: -200%; }
+}
+
+@media (max-width: 991px) {
+    .slide-box {
+        width: 100%;
+    }
+    
 }
 
 h2 {
