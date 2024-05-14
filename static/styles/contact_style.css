@@ -167,17 +167,31 @@ input , select, textarea{
 
 .button-send
 {
-    margin: 30px, 10px, 10px, 50px;
+    margin: 30px 10px 10px 50px;
     justify-content: center;
     display: flex;
     border-radius: 30px;
     height: 50px;
 }
 
-/* Ubication styles */
+/* ubicacion google maps */
 
 .map {
+    position: relative;
     border-radius: 50px;
+    padding-bottom: 56.25%;
+    overflow:hidden;
+    width: auto;
+    padding-bottom: 85%;
+}
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 50px; /* Aplica bordes redondeados al iframe */
 }
 .ubication_title{
     margin-bottom: 20px;
