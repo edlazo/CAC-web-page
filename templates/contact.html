@@ -31,24 +31,24 @@
     <div class="box_form_ubication">
       <!-- Formulario Contacto -->
       <div class="form_box">
-        <form action="#" method="post" id="form_contact" novalidate class="contact_form">
+        <form action="" method="POST" id="form_contact" class="contact_form">
           <h3>Envianos tu consulta</h3>
           <!-- Nombre -->
           <div class="form-control">
             <label for="">Nombre</label>
-            <input type="text" name="firstname" id="firstname" required placeholder="Ej: Federico" />
+            <input type="text" name="" id="name" placeholder="Ej: Juan" />
           </div>
 
           <!-- Teléfono -->
           <div class="form-control">
             <label for="">Teléfono</label>
-            <input type="tel" name="phone" id="phone" required placeholder="Ej: 11 1234 5678" />
+            <input type="tel" name="phone" id="phone" placeholder="Ej: 11 1234 5678" />
           </div>
 
           <!-- Mail -->
           <div class="form-control">
             <label for="">Mail</label>
-            <input type="email" name="email" id="email" required placeholder="Ej: email@example.com" />
+            <input type="email" name="email" id="email" placeholder="Ej: email@example.com" />
           </div>
 
           <!--Select Cantidad Mascotas -->
@@ -68,7 +68,7 @@
           <div class="form-radio">
             <label for="">Que prefieres?</label>
             <div class="radio-cat-dog">
-              <input type="radio" id="dog" name="cat-dog" />
+              <input type="radio" id="dog" name="cat-dog"/>
               <label for="dog" class="label-dog-cat">Perros</label>
               <input type="radio" id="cat" name="cat-dog" />
               <label for="cat" class="label-dog-cat">Gatos</label>
@@ -83,8 +83,9 @@
           </div>
           <div class="button-send">
             <!-- Botón de Envío -->
-            <input type="image" id="image-button" alt="Enviar" src="/static/img/send-button.webp" />
+            <input type="image" id="image-button" alt="submit" src="/static/img/send-button.webp" />
           </div>
+          <p class="warnings" id="warnings"></p>
         </form>
       </div>
       <!-- Ubicación -->
@@ -118,22 +119,23 @@
       </ul>
     </nav>
     </div>
-  
-      <!-- Payment methods -->
-      <div class="payment-methods">
-        <i class="fab fa-cc-visa"></i>
-        <i class="fab fa-cc-mastercard"></i>
-        <i class="fab fa-cc-amex"></i>
-        <i class="fab fa-cc-paypal"></i>
-      </div>
-      <!-- Social media icons -->
-      <div class="social-media">
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-      </div>
-    
+
+    <!-- Payment methods -->
+    <div class="payment-methods">
+      <i class="fab fa-cc-visa"></i>
+      <i class="fab fa-cc-mastercard"></i>
+      <i class="fab fa-cc-amex"></i>
+      <i class="fab fa-cc-paypal"></i>
+    </div>
+    <!-- Social media icons -->
+    <div class="social-media">
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+
   </footer>
+  <script src="/js/main.js"></script>
   <script src="https://kit.fontawesome.com/401e7f8f46.js" crossorigin="anonymous"></script>
 </body>
 
