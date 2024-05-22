@@ -7,14 +7,14 @@
     padding: 0;
 }
 
-/* Header Styles */
+/* estilo del encabezado */
 header {
     background-color: #FCFCFC;
     padding: 1rem; 
 }
 
 header h1 {
-    font-size: 1.5rem; /* Using rem for font sizes */
+    font-size: 1.5rem; 
 }
 
 header p {
@@ -25,13 +25,13 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap;  
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem; /* Using gap for spacing */
+    gap: 1rem; /* para espacio */
 }
 
 header nav ul li {
@@ -74,66 +74,66 @@ h2 {
     color: white;
 }
 
-/* Product Styles */
+/* estilo de los productos */
 .products {
     display: flex;
-    flex-wrap: wrap; /* Allowing flexibility */
-    justify-content: center; /* Centering content */
-    gap: 2rem; /* Adding space between items */
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 2rem; 
 }
 
 .products div {
-    flex: 1 1 300px; /* Flexible width with a minimum */
-    text-align: center; /* Center content */
+    flex: 1 1 300px; 
+    text-align: center; 
 }
 
 .products img {
     width: 100%;
-    max-width: 300px; /* Responsive width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; 
+    height: auto; 
 }
 
 
-/* Footer base styles */
+/* estilo del pie de pagina */
 footer {
-    background-color: hsl(36, 87%, 51%); /* Dark background color */
-    color: white;          /* White text color */
-    padding: 20px;         /* Padding around the footer */
+    background-color: hsl(36, 87%, 51%);  
+    color: white;         
+    padding: 20px;         
     display: flex;
-    justify-content: space-between; /* Distribute items across the width */
-    align-items: center;  /* Align items vertically */
+    justify-content: space-between; 
+    align-items: center;  
   }
   
-  /* Navigation styles */
+  /* estilos de navegacion */
   nav ul {
-    list-style: none; /* Remove bullet points from the list */
-    padding: 0;       /* Remove default padding */
-    margin: 0;        /* Remove default margin */
-    display: flex;    /* Display as a horizontal row */
+    list-style: none; 
+    padding: 0;       
+    margin: 0;        
+    display: flex;    
   }
   
   nav ul li {
-    margin-right: 20px; /* Spacing between items */
+    margin-right: 20px; 
   }
   
   nav ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: white;          /* Keep text white */
+    text-decoration: none; 
+    color: white;          
   }
   
   nav ul li a:hover {
-    color: #ddd; /* Change color on hover */
+    color: #ddd; /* cambiar color en hover*/
   }
   
-  /* Payment methods styles */
+  /* estilo de metodos de pago */
   .payment-methods {
-    display: flex; /* Display as a horizontal row */
+    display: flex; 
   }
   
   .payment-methods i {
-    font-size: 24px; /* Icon size */
-    margin-right: 10px; /* Spacing between icons */
-    color: white;  /* White icon color */
+    font-size: 24px; /* tamaño del icono */
+    margin-right: 10px; /* distancia entre iconos */
+    color: white;  
   }
   
   /* Social media styles */
@@ -146,11 +146,11 @@ footer {
   }
   
   .social-media i {
-    font-size: 24px; /* Icon size */
-    margin-right: 10px; /* Spacing between icons */
-    color: white;  /* White icon color */
+    font-size: 24px; 
+    margin-right: 10px; 
+    color: white;  
   }
   
   .social-media i:hover {
-    color: #ddd; /* Change color on hover */
+    color: #ddd; 
   }
