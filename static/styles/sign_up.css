@@ -11,7 +11,7 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Base styles for the header */
+/* estilo header */
 header {
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,7 @@ header {
 }
 
 
-/* Hyperlinks */
+/* Hiperlinks */
 ul {
     list-style-type: none;
     display: flex;
@@ -36,7 +36,7 @@ ul li a {
 
 }
 
-/* Form styles */
+/* Formulario estilo */
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -57,7 +57,7 @@ form {
     text-align: left;
 }
 
-/* Add some basic styling for form fields */
+/* agregamos otros y el boton */
 form input {
     width: 100%;
     padding: 10px;
